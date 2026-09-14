@@ -1,6 +1,6 @@
 ---
 name: android-production-ultimate
-description: Complete production knowledge for shipping Android apps — Kotlin 2.x, Jetpack Compose, Material 3 / M3 Expressive, MVI/MVVM Clean Architecture, UDF, spring motion & animation, adaptive layouts, Navigation 3, Room/DataStore/Ktor/Retrofit/Paging, Hilt/Koin, security & Play Integrity & biometrics, Google Play policy & Data Safety & GDPR & billing, testing & TDD, Compose performance & baseline profiles & R8, CI/CD & release, accessibility, notifications, background work. Use when building, reviewing, optimizing, or shipping ANY Android / Kotlin / Jetpack Compose app.
+description: Complete production knowledge for shipping Android apps — Kotlin 2.x, Jetpack Compose, Material 3 / M3 Expressive, MVI/MVVM Clean Architecture, UDF, spring motion & animation, adaptive layouts, Navigation 3, Room/DataStore/Ktor/Retrofit/Paging, Hilt/Koin, security & Play Integrity & biometrics, Google Play policy & Data Safety & GDPR & billing, testing & TDD, Compose performance & baseline profiles & R8, CI/CD & release, accessibility, notifications, background work, AND design taste / anti-AI-slop visual judgment (Anthropic frontend-design + AI-tell catalogs). Use when building, reviewing, optimizing, or shipping ANY Android / Kotlin / Jetpack Compose app.
 ---
 
 # THE ULTIMATE ANDROID PRODUCTION SKILL
@@ -11,7 +11,9 @@ biometrics, performance), skydoves (compose-performance-skills), chrisbanes (Goo
 krshmbb (android-security-skill), Drjacky/GubenkoAleksey (claude-android-ninja), 13krub
 (android-lead-agent-skills), rezaiyan (kmp-claude-playbook), Google's official `android/skills`
 (play-policy-insights, navigation-3, edge-to-edge, r8-analyzer, play-billing), devsemih
-(playstore-review), AbhijeetBabar (privacy-first-android).
+(playstore-review), AbhijeetBabar (privacy-first-android). Design-taste layer from Anthropic's
+official `frontend-design` skill (anthropics/skills), `avoid-ai-design` (funboy322), `kill-ai-slop`
+(yetone), and `ui-ux-pro-max` (nextlevelbuilder) — the 2026 anti-AI-slop + design-intelligence canon.
 
 ## HOW TO USE THIS SKILL
 
@@ -55,6 +57,16 @@ krshmbb (android-security-skill), Drjacky/GubenkoAleksey (claude-android-ninja),
 - Layout: Scaffold content padding consumed; edge-to-edge (`enableEdgeToEdge()` + insets) mandatory on 16; 48dp touch targets; thumb-zone primary actions; bottom nav 3–5 items (no hamburger on phones); adaptive via `WindowSizeClass` → `NavigationSuiteScaffold` auto Bar/Rail/Drawer; predictive back wired.
 - Reduced motion: read `ANIMATOR_DURATION_SCALE`/AccessibilityManager and provide instant fallbacks.
 - Accessibility = completeness: semantics, contentDescription, TalkBack flow, WCAG AA contrast. An inaccessible screen is unfinished.
+- Anti-AI-slop: **slop is the absence of a decision, not a banned color** — every visual choice must be
+  explainable for THIS product or it's a default to replace. Zero P0 tells on delivery: no indigo/purple
+  gradient, no gradient-clip headlines, no Inter/untouched-Material-theme everywhere, no centered-hero +
+  3-identical-cards combo, no emoji as icons, no one-hue candy status boxes. Card test: if removing
+  border+shadow+bg+radius costs nothing, it's not a card. Hierarchy from scale+space (one dominant
+  element, ≥1.25× steps), one accent not a rainbow, corners nest (inner = outer − gap), one elevation
+  scale held, blur only where layering is real. Commit to one named direction (type/palette/layout/motion/
+  signature); plan→review-vs-brief→build→critique before shipping; don't replace old slop (purple
+  gradients) with new slop (cream + serif + sage). (Full tell catalog + pre-delivery taste check:
+  Platform-Guidelines + Design-Taste domains.)
 - HIG bar on Android (iOS-26-era guidance, translated to Compose): two-layer discipline — a
   translucent FUNCTIONAL layer (bars/tab bar/floating actions) floats above full-bleed CONTENT;
   content scrolls under bars with a tokenized scrim/blur; brand lives in content + action roles,
@@ -102,6 +114,7 @@ krshmbb (android-security-skill), Drjacky/GubenkoAleksey (claude-android-ninja),
 | 8 | Legal, Play Policy, Privacy & Billing | Data Safety, disclosure/consent, account deletion, restricted permissions, ads/families, minimum functionality, Play Billing, GDPR/CCPA, pre-submission checklist, top rejections |
 | 9 | Platform, Build, Release & Observability | accessibility, notifications/FCM, WorkManager/FGS, Gradle/convention plugins, R8/app size, signing, CI/CD, Play Console flow, vitals, profiling, i18n, device automation |
 | 10 | Platform-Guidelines Compliance (HIG ↔ Material 3) | honest audit scorecard, HIG 5 values in Compose, two-layer discipline, materials/blur policy, iOS-smooth motion, typography/brand/invert rules, SF↔Material icon map, M3-vs-HIG conflict rulings, compliance checklist |
+| 11 | Design Taste & Anti-AI-Slop | governing principle (no-decision=the tell), full AI-tell catalog with P0/P1/P2 severities + fixes (color/type/layout/components/craft/spacing/motion/copy/imagery), aesthetic direction chooser, plan→review→build→critique loop, pre-delivery taste check, what-not-to-over-flag calibration |
 
 ---
 

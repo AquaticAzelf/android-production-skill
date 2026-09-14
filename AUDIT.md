@@ -76,6 +76,26 @@ via borrowed principles). Post-audit (Domain 10):
 watchOS are outside an Android skill's remit — but every HIG *design principle* now has a
 named, Compose-executable equivalent, with conflicts adjudicated rather than ignored.
 
+## v1.1 — Design Taste & Anti-AI-Slop (Domain 11)
+
+Prompted by a real-world build (a GitHub-themed habit-tracker prototype) that exposed what
+the mobile-native skill corpus *doesn't* teach: design judgment. `ui-ux-pro-max`'s
+Jetpack-Compose stack file was checked and found **weaker** than Domains 1–5 — deliberately
+not merged, per this project's merge rule (adopt only real upgrades). What *was* adopted, from
+four design-intelligence sources (Anthropic's official `frontend-design`, `avoid-ai-design`,
+`kill-ai-slop`, `ui-ux-pro-max`):
+
+- the governing principle — **slop is the absence of a decision, not a banned color**
+- a deduped **~70-tell catalog** with P0/P1/P2 severities and per-tell fixes (color, type,
+  layout, components, corner/shadow craft, spacing, motion, copy, imagery)
+- the **plan → review-vs-brief → build → critique** loop and the direction-chooser
+  (commit one named aesthetic, name its five moves, calibrate intensity per screen)
+- a **pre-delivery taste check** extending Domain 10's checklist, plus an
+  **over-flag calibration list** (bento/glass/dark/mesh are *not* slop when chosen) so the
+  skill fights 2024 slop without installing 2026 slop (cream + serif + sage)
+
+Design-guideline score now: Material ~98% · HIG ~95% · **anti-slop: 0 → ~90%** (was absent).
+
 ## Honest limitations
 
 - **Distillation ≠ oracle.** Sources themselves lag Google I/O by weeks; version pins

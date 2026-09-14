@@ -40,6 +40,9 @@ Prefer reading a named `###` range over a whole file. Total corpus: 9 domains,
 | **Icon choice (share/settings/search/trash…)** | `part-e.md:142` (SF↔Material map) |
 | **M3 vs Apple conflict (elevation/back/bars)** | `part-e.md:169` (conflict rulings table) |
 | **Dark mode / high contrast / invert safety** | `part-e.md:133` (§4) + `part-d.md:344` (a11y) |
+| **"Don't let it look AI-generated" / taste pass** | `part-f.md:36` (tells catalog), `part-f.md:234` (pre-delivery taste check) |
+| **Choose a visual direction for a new product** | `part-f.md:15` (principle), `part-f.md:191` (direction chooser), `part-f.md:217` (plan→critique loop) |
+| **Review UI for slop before shipping** | `part-f.md:261` (calibration) then the taste check at `part-f.md:234` |
 
 ## 2. Domain map (where everything lives)
 
@@ -54,7 +57,8 @@ Prefer reading a named `###` range over a whole file. Total corpus: 9 domains,
 | 7. Testing & Quality | part-c.md | 1348 strategy · 1448 VM/Flow · 1561 coroutines · 1639 fakes · 1683 DI · 1754 compose-ui · 1866 screenshot · 1949 network/paging · 2030 TDD · 2060 coverage · 2088 lint · 2132 strictmode · 2176 crash · 2244 debugging · 2277 checklist · 2319 anti |
 | 8. Legal/Play/Privacy/Billing | part-d.md | 6 data-safety · 37 policy/consent · 56 acct-deletion · 67 restricted-perms · 96 target-api · 113 ads/families · 136 min-functionality · 155 billing · 201 GDPR · 218 privacy-design · 257 crash-PII · 287 PRE-SUBMIT · 326 TOP-REJECTIONS |
 | 9. Platform/Release/Observ. | part-d.md | 344 a11y · 606 notifications · 760 background · 849 gradle · 1009 obfuscation/size · 1035 signing · 1056 ci-cd · 1126 console · 1161 vitals · 1190 profiling · 1245 i18n · 1263 device-auto · 1291 anti · 1304 RELEASE-READY |
-| 10. HIG ↔ Material 3 (NEW) | part-e.md | 11 SCORECARD · 34 HIG-values · 53 eight-rules (53 §3.2 two-layer · §3.3 materials) · 133 invert · 142 ICON-MAP · 169 CONFLICTS · 181 apple-recipes · 198 COMPLIANCE-CHECKLIST |
+| 10. HIG ↔ Material 3 | part-e.md | 11 SCORECARD · 34 HIG-values · 53 eight-rules (53 §3.2 two-layer · §3.3 materials) · 133 invert · 142 ICON-MAP · 169 CONFLICTS · 181 apple-recipes · 198 COMPLIANCE-CHECKLIST |
+| 11. Design Taste & Anti-AI-Slop | part-f.md | 15 PRINCIPLE (no-decision=the-tell) · 36 TELLS-CATALOG (C/T/L/K/S/M/CP/IM, P0→P2) · 191 DIRECTION-CHOOSER · 217 plan→review→build→critique LOOP · 234 TASTE-CHECKLIST · 261 do-NOT-over-flag CALIBRATION |
 
 ## 3. Review mode — grep these WRONG patterns in generated code
 

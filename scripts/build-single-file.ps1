@@ -4,7 +4,7 @@ $root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $enc  = New-Object System.Text.UTF8Encoding($false)
 $out  = Join-Path $root "ULTIMATE-SKILL.md"
 [System.IO.File]::WriteAllText($out, (Get-Content (Join-Path $root "SKILL.md") -Raw -Encoding UTF8), $enc)
-foreach ($p in 'part-a','part-b','part-c','part-d','part-e') {
+foreach ($p in 'part-a','part-b','part-c','part-d','part-e','part-f') {
     $t = Get-Content (Join-Path $root "references\$p.md") -Raw -Encoding UTF8
     [System.IO.File]::AppendAllText($out, "`n`n" + $t, $enc)
 }
